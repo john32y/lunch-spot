@@ -12,17 +12,18 @@ export default function App() {
     <View style={styles.container}>
       <Text style={styles.header}>
         Lunch Spot🍔🍺🌮</Text>
-        <RestList/>
+        <RestList selectRestaurant={selectRestaurant}/>
       <StatusBar style="auto" />
     </View>
-    <Tray selectRestaurant={setSelectRestaurant}/>
+    <Tray setSelectRestaurant={setSelectRestaurant}/>
     </>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    paddingTop: 20,
+    
+    paddingTop: 50,
     flex: 1,
     backgroundColor: '#2262fe',
     alignItems: 'center',
