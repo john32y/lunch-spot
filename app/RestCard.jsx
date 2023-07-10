@@ -14,17 +14,23 @@ const styles = StyleSheet.create({
         width: '100%',
         height: 200,
         bordrRadius: 6,
+        borderWidth: 3,
+        borderColor: '#cccccc',
+        borderStyle: 'solid',
     },
+
     card: {
-        padding: 8,
-        margin: 8,
         borderRadius: 12,
-        backgroundColor: '#c0d0e0'
-    },
+        paddingHorizontal: 10,
+        paddingVertical: 16,
+        marginBottom: 12,
+        },
 
     title: {
         color: '#203040',
         fontSize: 28,
+        fontWeight: 700,
         textAlign: 'center',
+        marginTop: 12,
     },
 })

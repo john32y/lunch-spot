@@ -16,11 +16,11 @@ export default function Tray({ setSelectRestaurant }) {
             <View style={styles.buttonList}>
 
             <TouchableOpacity onPress={choose} style={styles.button}>
-            <Text style={styles.buttonText}>Toss up!</Text>
+            <Text style={styles.buttonText}>Mix it!</Text>
             </TouchableOpacity>
 
-            <TouchableOpacity onPress={clear} style={styles.resetButton}>
-                <Text style={styles.buttonText}>RESET</Text>
+            <TouchableOpacity onPress={clear} style={[styles.button, styles.resetButton]}>
+                <Text style={styles.resetButtonText}>Reset↺</Text>
             </TouchableOpacity>
             </View>
         </View>
@@ -35,39 +35,55 @@ const styles = StyleSheet.create({
         justifyContent: 'space-evenly'
     },
 
+    buttonText: {
+        color: 'black',
+        fontSize: 20,
+        fontWeight: '600',
+    },
+
 
     button: {
-        backgroundColor: 'pink',
-        paddingHorizontal: 24,
+        backgroundColor: '#ed714d',
+        paddingHorizontal: 30,
         paddingVertical: 8,
-        borderRadius: 4,
+        borderRadius: 20,
+        borderWidth: 2,
         borderStyle: 'solid',
-        borderWidth: 1,
-        borderColor: 'black',
+        borderColor: '#f79477',
+        
     },
-    resetButton: {
-        backgroundColor: 'grey',
-        paddingHorizontal: 24,
-        paddingVertical: 8,
-        borderRadius: 4,
-        borderStyle: 'solid',
-        borderWidth: 1,
-        borderColor: 'black'
+    resetButtonText: {
+        color: '#777',
+        fontSize: 17,
+        fontWeight: 800,
 
+    },
+
+    resetButton: {
+        backgroundColor: '#f4f5f6',
     },
 
     buttonText: {
         color: 'white',
-        fontSize: 20,
+        fontSize: 17,
         fontWeight: 800,
     },
 
     tray: {
         width: '100%',
-        height: 70,
+        height: 120,
+        paddingTop: 30,
         backgroundColor: '#e9eeff',
         alignItems: 'center',
         justifyContent: 'center',
-        paddingBottom: 10,
+        paddingBottom: 30,
+        shadowColor: "#000",
+        shadowOffset: {
+	    width: 0,
+	    height: -10,
+        },
+        shadowOpacity: 0.09,
+        shadowRadius: 9.5,
+        elevation: 15,
     }
 })

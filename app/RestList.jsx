@@ -47,6 +47,7 @@ export default function RestList({ selectRestaurant }) {
         padding: 8,
         fontSize: 24,
         color: '#eee',
+        textAlign: 'center'
 
     },
     scrollingList : {
