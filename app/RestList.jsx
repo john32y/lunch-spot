@@ -20,7 +20,7 @@ export default function RestList({ selectRestaurant }) {
         }else{
             setChosenRestaurant()
         }
-    },[] )
+    },[selectRestaurant] )
     
     return (
         <>
@@ -50,8 +50,6 @@ export default function RestList({ selectRestaurant }) {
 
     },
     scrollingList : {
-        borderWidth: 2,
-        borderStyle: 'solid',
         width: '90%',
         marginTop: 16
     },
