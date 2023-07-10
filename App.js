@@ -11,7 +11,7 @@ export default function App() {
     <>
     <View style={styles.container}>
       <Text style={styles.header}>
-        Lunch Spot🍔🍺🌮</Text>
+        Boca's Lunch Spot🍔🍺🌮🍗🍕🍦🍣</Text>
         <RestList selectRestaurant={selectRestaurant}/>
       <StatusBar style="auto" />
     </View>
